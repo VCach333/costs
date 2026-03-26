@@ -1,13 +1,16 @@
 /* styles import */
 import './style.css'
 
-function LinkButton({to, content}) {
+/* packages import */
+import { Link } from 'react-router-dom'
 
-    return(
+function LinkButton({ to, content }) {
+
+    return (
         <>
-            <a href={to}>
+            <Link to={to}>
                 {content}
-            </a>
+            </Link>
         </>
     )
 }

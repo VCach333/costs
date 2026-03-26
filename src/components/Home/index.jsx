@@ -13,7 +13,7 @@ function Home() {
         <>
             <div className="home_container">
                 <h1>Bem-vindo ao <span>Costs</span></h1>
-                <p>Não perca mais tempo, comece agora mesmo a Gerenciar Projetos e Serviços de uma forma mais eficiente e moderna</p>
+                <p>Gerencie os seus Projetos e seus Serviços</p>
                 <LinkButton to='/projects/new' content='Novo Projeto' />
                 <img src={saving} alt="Costs" />
             </div>
