@@ -1,0 +1,15 @@
+a {
+    background-color: #222;
+    color: #fff;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: #ffbb33;
+}
+
+a:active {
+    transform: scale(1.2);
+}

@@ -10,8 +10,6 @@ nav {
 	justify-content: space-between;
 }
 
-nav .logo {}
-
 nav .logo img {
 	width: 2.2rem;
 	border-radius: 50%;
