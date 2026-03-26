@@ -1,6 +1,9 @@
 /* styles import */
 import './style.css'
 
+/* assets import */
+import logo from '../../assets/favicon-cach-purple.png'
+
 /* package import */
 import { Link } from 'react-router-dom'
 
@@ -10,7 +13,7 @@ function Navbar() {
         <>
             <nav>
                 <div className="logo">
-                    <img src="../../../public/favicon-cach-purple.png" alt="Costs" />
+                    <img src={logo} alt="Costs" />
                 </div>
 
                 <ul>
