@@ -1,3 +1,6 @@
+/* hooks imports */
+import { useState, useEffect } from 'react'
+
 /* styles import */
 import './style.css'
 
@@ -7,6 +10,25 @@ import GeneralSelect from '../../Form/GeneralSelect'
 import SubmitButton from '../../Form/SubmitButton'
 
 function ProjectForm({ btnText }) {
+
+    const [categories, setCategories] = useState([])
+
+    useEffect(() => {
+
+        fetch('http://localhost:5000/categories', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+
+        }).then(async (resp) => {
+
+            const apiCategories = await resp.json()
+
+            setCategories(apiCategories)
+
+        }).catch(err => console.log(err))
+    }, [])
 
     return (
         <>
@@ -29,16 +51,7 @@ function ProjectForm({ btnText }) {
                 <GeneralSelect
                     ident='projectCategoria'
                     label='Categoria'
-                    options={[
-                        {
-                            textContent: 'Planejamento',
-                            value: 'planejamento'
-                        },
-                        {
-                            textContent: 'Administração',
-                            value: 'administracao'
-                        }
-                    ]}
+                    options={categories}
                 />
 
                 <SubmitButton
