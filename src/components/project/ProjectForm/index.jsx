@@ -4,8 +4,9 @@ import './style.css'
 /* components import */
 import GeneralInput from '../../Form/GeneralInput'
 import GeneralSelect from '../../Form/GeneralSelect'
+import SubmitButton from '../../Form/SubmitButton'
 
-function ProjectForm() {
+function ProjectForm({ btnText }) {
 
     return (
         <>
@@ -40,14 +41,10 @@ function ProjectForm() {
                     ]}
                 />
 
-                <div>
-                    <select>
-                        <option disabled selected>Categoria</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="submit">Criar</button>
-                </div>
+                <SubmitButton
+                    text={btnText}
+                />
+
             </form>
         </>
     )
