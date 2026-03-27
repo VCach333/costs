@@ -1,17 +1,29 @@
 /* styles import */
 import './style.css'
 
+/* components import */
+import GeneralInput from '../../Form/GeneralInput'
+
 function ProjectForm() {
 
-    return(
+    return (
         <>
             <form>
-                <div>
-                    <input type="text" placeholder="nome" />
-                </div>
-                <div>
-                    <input type="number" placeholder="orçamento" />
-                </div>
+
+                <GeneralInput
+                    ident='projectNome'
+                    type='text'
+                    placeholder='ex.: Aquisição de Website'
+                    label='nome'
+                />
+
+                <GeneralInput
+                    ident='projectOrcamento'
+                    type='number'
+                    placeholder='ex.: 100000'
+                    label='orçamento'
+                />
+
                 <div>
                     <select>
                         <option disabled selected>Categoria</option>
