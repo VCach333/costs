@@ -3,6 +3,7 @@ import './style.css'
 
 /* components import */
 import GeneralInput from '../../Form/GeneralInput'
+import GeneralSelect from '../../Form/GeneralSelect'
 
 function ProjectForm() {
 
@@ -22,6 +23,21 @@ function ProjectForm() {
                     type='number'
                     placeholder='ex.: 100000'
                     label='orçamento'
+                />
+
+                <GeneralSelect
+                    ident='projectCategoria'
+                    label='Categoria'
+                    options={[
+                        {
+                            textContent: 'Planejamento',
+                            value: 'planejamento'
+                        },
+                        {
+                            textContent: 'Administração',
+                            value: 'administracao'
+                        }
+                    ]}
                 />
 
                 <div>
