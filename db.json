@@ -1,21 +1,66 @@
 {
-    "projects": [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infraestrutura"
-        },
-        {
-            "id": 2,
-            "name": "Planejamento"
-        },
-        {
-            "id": 3,
-            "name": "Marketing"
-        },
-        {
-            "id": 4,
-            "name": "Filantrópico"
-        }
-    ]
+  "projects": [
+    {
+      "projectNome": "teste",
+      "projectOrcamento": "5000",
+      "category": {
+        "id": "3",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "projectNome": "testee",
+      "projectOrcamento": "50006",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "projectNome": "testee",
+      "projectOrcamento": "50006",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "projectNome": "Teste",
+      "projectOrcamento": "500",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infraestrutura"
+    },
+    {
+      "id": 2,
+      "name": "Planejamento"
+    },
+    {
+      "id": 3,
+      "name": "Marketing"
+    },
+    {
+      "id": 4,
+      "name": "Filantrópico"
+    }
+  ]
 }
