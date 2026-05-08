@@ -43,6 +43,71 @@
       "cost": 0,
       "services": [],
       "id": 4
+    },
+    {
+      "category": {
+        "id": "3",
+        "name": "Marketing"
+      },
+      "projectNome": "Aquisição de Identidade Visual",
+      "projectOrcamento": "5000",
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "projectNome": "srggr",
+      "projectOrcamento": "5555",
+      "category": {
+        "id": "3",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "projectNome": "sac",
+      "projectOrcamento": "444",
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "projectNome": "dwadws",
+      "projectOrcamento": "43",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "projectNome": "gf",
+      "projectOrcamento": "66",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 9
+    },
+    {
+      "projectNome": "srafg",
+      "projectOrcamento": "222",
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "projectNome": "sdfsdf",
+      "projectOrcamento": "666",
+      "cost": 0,
+      "services": [],
+      "id": 11
     }
   ],
   "categories": [

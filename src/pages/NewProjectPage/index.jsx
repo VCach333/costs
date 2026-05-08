@@ -26,8 +26,7 @@ function NewProjectPage() {
         }).then((response) => {
             response.json()
         }).then(data => {
-            console.log(data)
-            navigate('/projects', {message: 'Projeto Cadastrado'})
+            navigate('/projects', {state: {message: 'Projeto Cadastrado'}})
         }).catch(err => console.log(err))
     }
 

@@ -3,8 +3,6 @@ import './style.css'
 
 function GeneralSelect({ident, value, handleOnChange, options, label}) {
 
-    console.log('opts: ' + options)
-
     return(
         <div className="form_control">
             <select name={ident} id={ident} onChange={handleOnChange} value={value || ''}>
