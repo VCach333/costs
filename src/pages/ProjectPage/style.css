@@ -15,5 +15,73 @@
 }
 
 .projects_content {
-    margin-top: 3emg;
+    margin-top: 3em;
+}
+
+.project_card {
+    width: 300px;
+    height: 240px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #d8d8d8;
+    box-shadow: 0 6px 12px #0000001a;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.project_card > div {
+    padding: 12px 24px;
+}
+
+.project_card_header {
+    background-color: #333;
+}
+
+.project_card_header h4 {
+    color: #ffbb33;
+}
+
+.project_card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project_card_content blockquote {
+    border-left: 3px solid #333;
+    padding-left: 6px;
+}
+
+.project_card_content blockquote:first-child span {
+    color: #15a402;
+    font-weight: 600;
+}
+
+.project_card_content blockquote span {}
+
+.project_card_action {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f8f8f8;
+}
+
+.project_card_action button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 6px;
+}
+
+.project_card_action button svg {
+    color: #777;
+}
+
+.project_card_action button:first-child {
+    background-color: #f73d3d3d;
+}
+
+.project_card_action button:first-child svg {
+    color: #f73d3d;
 }
