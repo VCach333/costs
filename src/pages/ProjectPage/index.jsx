@@ -1,19 +1,19 @@
 /* hook & utils import */
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 /* style import */
 import './style.css'
 
-/* icons import */
-import { FaEdit, FaTrash } from 'react-icons/fa'
-
 /* component import */
 import Message from "../../layouts/Message"
 import LinkButton from '../../components/LinkButton'
+import ProjectCard from '../../components/Project/ProjectCard'
 
 function ProjectPage() {
 
     const location = useLocation()
+    const [projects, setProjects] = useState([])
 
     let message = ''
     if (location.state) {
@@ -21,49 +21,51 @@ function ProjectPage() {
         message = location.state.message
     }
 
+    useEffect(() => {
+
+        fetch('http://localhost:5000/projects', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => response.json()).then(data => {
+
+            //console.log(data)
+            setProjects(data)
+
+        }).catch(err => console.log(err))
+
+    }, [])
+
     return (
 
         <div className='projects_container'>
-            
+
             <div className='projects_header'>
                 <h1>Meus Projetos</h1>
                 <LinkButton to='/projects/new' content='Novo Projeto' />
             </div>
-            
+
             {message &&
                 <Message msg={message} type='success' />
             }
 
-            <div className='projects_content'>
-                
-                <div className="project_card">
-                    
-                    <div className="project_card_header">
-                        <h4>Nome do Projeto</h4>
-                    </div>
+            <div className="projects_content">
 
-                    <div className="project_card_content">
+                {projects.length > 0 &&
 
-                        <blockquote>
-                            Orçamento: <span>2000</span>
-                        </blockquote>
+                    projects.map(project => (
 
-                        <blockquote>
-                            Categoria: <span>Categoria</span>
-                        </blockquote>
 
-                    </div>
-
-                    <div className="project_card_action">
-                        <button>
-                            <FaTrash />
-                        </button>
-                        <button>
-                            <FaEdit git/>
-                        </button>
-                    </div>
-
-                </div>
+                        <ProjectCard
+                            key={project.id}
+                            id={project.id}
+                            name={project.projectNome}
+                            budget={project.projectOrcamento}
+                            category={project.category.name}
+                        />
+                    ))
+                }
 
             </div>
         </div>

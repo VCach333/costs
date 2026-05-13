@@ -67,13 +67,6 @@
       "id": 6
     },
     {
-      "projectNome": "sac",
-      "projectOrcamento": "444",
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
       "projectNome": "dwadws",
       "projectOrcamento": "43",
       "category": {
@@ -96,18 +89,15 @@
       "id": 9
     },
     {
-      "projectNome": "srafg",
+      "category": {
+        "id": "2",
+        "name": "Planejamento"
+      },
+      "projectNome": "rgef",
       "projectOrcamento": "222",
       "cost": 0,
       "services": [],
-      "id": 10
-    },
-    {
-      "projectNome": "sdfsdf",
-      "projectOrcamento": "666",
-      "cost": 0,
-      "services": [],
-      "id": 11
+      "id": 12
     }
   ],
   "categories": [

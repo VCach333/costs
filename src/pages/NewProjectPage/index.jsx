@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import './style.css'
 
 /* components import */
-import ProjectForm from '../../components/project/ProjectForm'
+import ProjectForm from '../../components/Project/ProjectForm'
 
 function NewProjectPage() {
 
